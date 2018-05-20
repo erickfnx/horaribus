@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="mx.unam.horaribus.MenuRutasActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/horaribuslarge2" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="385dp"
+                android:layout_height="385dp"
+                android:layout_weight="1"
+                android:onClick="toreo"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/logotoreo"
+                tools:scaleType="fitXY" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="385dp"
+                android:layout_height="385dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:contentDescription="botoninter"
+                android:onClick="intercampus"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:srcCompat="@drawable/logointer"
+                tools:layout_width="385dp"
+                tools:scaleType="fitXY" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="385dp"
+                android:layout_height="385dp"
+                android:layout_weight="1"
+                android:onClick="subur"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/logosubur" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="385dp"
+                android:layout_height="385dp"
+                android:layout_weight="1"
+                android:background="?android:attr/colorPressedHighlight"
+                android:contentDescription="botonpoli"
+                android:onClick="poli"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:srcCompat="@drawable/logopoli"
+                tools:layout_width="385dp"
+                tools:scaleType="fitXY" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.widget.LinearLayout>
